@@ -10,7 +10,7 @@ export const create = async(req, res, next) =>{
     }
 }
 
-// function for getting product data list
+// function for getting product data list with filters and pagination
 export const list = async(req, res, next)=>{
     try {
         const page = parseInt(req.query.page) || 1;
