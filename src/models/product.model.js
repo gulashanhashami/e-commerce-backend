@@ -6,10 +6,10 @@ const productSchema = mongoose.Schema(
         image: { type: String, require: true },
         rating: { type: Number, min: 0, max: 5 },
         price: { type: Number, require: true },
-        category: {type: String, require: true},
-        wishlistedBy: [{type: String }]
+        category: { type: String, require: true },
+        wishlistedBy: [{ type: String }]
 
-    }, 
+    },
     {
         versionKey: false,
         timestamps: true

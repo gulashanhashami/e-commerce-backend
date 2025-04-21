@@ -3,6 +3,7 @@ import cors from "cors";
 import connect_db from "./configs/db.js";
 import dotenv from "dotenv";
 import productRoutes from "./routes/product.route.js";
+import cartRoutes from "./routes/cart.route.js";
 
 dotenv.config();
 
@@ -18,10 +19,11 @@ const corsOPtions = {
 app.use(cors(corsOPtions));
 
 app.use("/api/product", productRoutes);
+app.use("/api/cart", cartRoutes);
 
 const port = process.env.PORT;
 
-app.listen(port, async()=>{
+app.listen(port, async () => {
     try {
         await connect_db();
         console.log(`Listening on port: ${port}`)

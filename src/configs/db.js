@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 //function for connecting database
-const connect_db = () =>{
+const connect_db = () => {
     return mongoose.connect(process.env.MONGO_DATABASE);
 }
 
