@@ -13,6 +13,6 @@ Clone this Project
 
 `git pull https://github.com/gulashanhashami/e-commerce-backend.git`
 
-# npm install
-# npm run server
+- npm install
+- npm run server
 - Now the project is ready just go and visit on postman
